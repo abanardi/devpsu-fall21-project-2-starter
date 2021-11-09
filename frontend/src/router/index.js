@@ -20,9 +20,13 @@ export default new VueRouter({
       component: ToDoList
     },
     {
+      path: '/random',
+      name: 'random',
+    },
+    {
       path: '*',
       redirect: '/'
-    }
+    },
   ],
   linkActiveClass: 'active',
 })
